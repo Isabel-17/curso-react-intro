@@ -1,0 +1,7 @@
+.children {
+    border: 1px solid red;
+    display: flex;
+    position: relative; 
+    left: 40%;
+    width: 20%; 
+};

@@ -1,11 +1,22 @@
+import './TodoItem.css'
+
 function TodoItem(props) {
     return (
-      <li>
-        <span>V</span>
-        <p>{props.text}</p>
-        <span>X</span>
+      
+      <li className="item justify">
+        <div className='item'>
+          <span >
+            V
+          </span>
+          <p className='lspacing'>
+            {props.text}
+          </p>
+        </div>
+        <span>
+          X
+        </span>
       </li>
-    )
+    );
   }
 
   export { TodoItem };
