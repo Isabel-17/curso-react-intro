@@ -8,7 +8,7 @@ import './App.css'
 
 const defaultTodos= [
   {text: 'Lavar loza', completed: false},
-  {text: 'Barrer', completed: false},
+  {text: 'Barrer', completed: true},
   {text: 'Hacer almuerzo', completed: true},
   {text: 'Sacar a Lupe 3 veces', completed: false}
 ];

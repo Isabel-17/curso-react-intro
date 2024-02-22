@@ -1,6 +1,6 @@
 .search{
-    position: relative;
     display: flex;
+    position: relative;
     left: 36%;
     bottom: 8rem;
     width: 400px;
@@ -9,4 +9,11 @@
     border: none;
     text-align: center;
     font-size: 1.5rem;
-};
+    background-color: aliceblue;
+    box-shadow:rgb(138, 127, 127) 5px 5px 40px;
+    
+}
+.search:focus {
+    outline-color: rgba(255, 157, 195, 0.637);
+}
+

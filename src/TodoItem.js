@@ -2,19 +2,12 @@ import './TodoItem.css'
 
 function TodoItem(props) {
     return (
-      
-      <li className="item justify">
-        <div className='item'>
-          <span >
-            V
-          </span>
-          <p className='lspacing'>
+      <li className="todo-item">
+          <span className={`Icon check  ${props.completed && "check--active"}`}></span>
+          <p className={`TodoItem-p  ${props.completed && "TodoItem-p--complete"}`}>
             {props.text}
           </p>
-        </div>
-        <span>
-          X
-        </span>
+        <span className='Icon close'></span>
       </li>
     );
   }

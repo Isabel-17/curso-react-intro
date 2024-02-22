@@ -9,11 +9,13 @@
     display: flex;
     justify-content: center;
 
-    .title{
-        color: white;
-        position: relative;
-        top:5rem ;
-        display: flex
-    }
-};
-
+}
+.title{
+    color: white;
+    position: relative;
+    top:5rem ;
+    display: flex;
+}
+.counter span {
+    font-weight: bold;
+}

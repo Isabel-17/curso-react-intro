@@ -1,17 +1,84 @@
-.item {
+.todo-item {
     display: flex;
-    /* flex-direction: column; */
-    /* align-content: center; */
+    position: relative;
+    width: 40%;
+    list-style: none;
+    flex-direction: row;
+    justify-content: space-around;
     align-items: center;
-    /* justify-content: space-between; */
-    /* background-color: red; */
+    height: 4rem;
+    margin: 0.4rem 0;
+    left: 30%;
+    top: -7rem;
+    box-shadow:rgb(179, 166, 166) 5px 5px 40px;
+    background-color: aliceblue;
+  }
 
-};
-.justify {
-    justify-content: space-between;
-};
-.lspacing {
+  
+.todo-item p {
+    width: 70%;
+  }
+
+.TodoItem-p {
+    margin: 24px 0 24px 24px;
+    width: calc(100% - 120px);
+    font-size: 18px;
+    line-height: 24px;
+    font-weight: 400;
+}
+.TodoItem-p--complete {
+    text-decoration: line-through;
+}
+.Icon {
+    cursor: pointer;
     display: flex;
-    margin-left: 10px;
-    background-color: red;
-};
+    justify-content: center;
+    align-items: center;
+    height: 48px;
+    width: 48px;
+    font-size: 24px;
+    font-weight: bold;
+}
+.todo-item .check {
+    background: url("/img/ckeck.png") no-repeat;
+    background-size: 90%;
+    background-position: center center;
+    width: 2.5em;
+    height: 2.5em;
+    border: none;
+    cursor: pointer;
+}
+.todo-item .check--active {
+    background: url("/img/check4.jpg") no-repeat;
+    background-size: 90%;
+    background-position: center center;
+    width: 2.5em;
+    height: 2.5em;
+    border: none;
+    cursor: pointer;
+  }
+  
+
+.Icon-delete{
+    position:absolute;
+    top: -24px;
+    right: 0;
+}
+.Icon-delete:hover{
+    color: red;
+}
+.todo-item .close {
+    background: url("/img/descarga.png") no-repeat;
+    background-size: 90%;
+    background-position: center center;
+    width: 1.2em;
+    height: 1.2em;
+    border: none;
+    cursor: pointer;
+  }
+  
+  .todo-item .close:hover {
+    background: url("/img/clase5.png") no-repeat;
+    background-size: 90%;
+    background-position: center center;
+  }
