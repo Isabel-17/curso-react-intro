@@ -12,12 +12,11 @@
     top: -7rem;
     box-shadow:rgb(179, 166, 166) 5px 5px 40px;
     background-color: aliceblue;
-  }
-
+}
   
 .todo-item p {
     width: 70%;
-  }
+}
 
 .TodoItem-p {
     margin: 24px 0 24px 24px;
@@ -26,59 +25,43 @@
     line-height: 24px;
     font-weight: 400;
 }
-.TodoItem-p--complete {
-    text-decoration: line-through;
-}
-.Icon {
-    cursor: pointer;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    height: 48px;
-    width: 48px;
-    font-size: 24px;
-    font-weight: bold;
-}
-.todo-item .check {
-    background: url("/img/ckeck.png") no-repeat;
-    background-size: 90%;
-    background-position: center center;
-    width: 2.5em;
-    height: 2.5em;
-    border: none;
-    cursor: pointer;
-}
-.todo-item .check--active {
-    background: url("/img/check4.jpg") no-repeat;
-    background-size: 90%;
-    background-position: center center;
-    width: 2.5em;
-    height: 2.5em;
-    border: none;
-    cursor: pointer;
-  }
-  
 
-.Icon-delete{
-    position:absolute;
-    top: -24px;
-    right: 0;
+.TodoItem-p--complete {
+  text-decoration: line-through;
 }
-.Icon-delete:hover{
-    color: red;
-}
-.todo-item .close {
-    background: url("/img/descarga.png") no-repeat;
-    background-size: 90%;
+
+.todo-item .check {
+    /* background: url("/img/checkSimple.svg") no-repeat; */
+    background-size: 6%;
     background-position: center center;
-    width: 1.2em;
-    height: 1.2em;
+    width: 2.5em;
+    height: 2.5em;
     border: none;
     cursor: pointer;
-  }
-  
-  .todo-item .close:hover {
-    background: url("/img/clase5.png") no-repeat;
-    background-size: 90%;
+}
+
+.todo-item .check--active {
+    /* background: url("") no-repeat; */
+    background-size: 63%;
     background-position: center center;
-  }
+    width: 2.5em;
+    height: 2.5em;
+    border: none;
+    cursor: pointer;
+}
+  
+.todo-container-item .close {
+  /* background: url("") no-repeat; */
+      background-size: 90%;
+      background-position: center center;
+      width: 1.2em;
+      height: 1.2em;
+      border: none;
+      cursor: pointer;
+}
+    
+.todo-item .close:hover {
+    /* background: url("/img/clase5.png") no-repeat; */
+      background-size: 90%;
+       background-position: center center;
+    }
