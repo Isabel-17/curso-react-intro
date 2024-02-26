@@ -5,13 +5,12 @@
     align-items: center;
     height:40px;
     width: 40px;
-    font-size: 24px;
     font-weight: bold;
   }
 
 .Icon-container-delete{
     position:absolute;
-    top: -24px;
+    top: 12px;
     right: 0;
 }
 .Icon-container-delete:hover{

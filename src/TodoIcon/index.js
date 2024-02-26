@@ -1,5 +1,5 @@
-import { ReactComponent as CheckSVG} from "./check.svg"
-import { ReactComponent as DeleteSVG} from "./delete.svg"
+import { ReactComponent as CheckSVG} from "./img/check.svg"
+import { ReactComponent as DeleteSVG} from "./img/delete.svg"
 import './TodoIcon.css'
 
 

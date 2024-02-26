@@ -10,7 +10,7 @@
     margin: 0.4rem 0;
     left: 30%;
     top: -7rem;
-    box-shadow:rgb(179, 166, 166) 5px 5px 40px;
+    box-shadow:rgb(136, 116, 116) 5px 5px 40px;
     background-color: aliceblue;
 }
   
@@ -28,12 +28,11 @@
 
 .TodoItem-p--complete {
   text-decoration: line-through;
+  text-decoration-color: black;
+  color: rgb(172, 170, 170);
 }
 
 .todo-item .check {
-    /* background: url("/img/checkSimple.svg") no-repeat; */
-    background-size: 6%;
-    background-position: center center;
     width: 2.5em;
     height: 2.5em;
     border: none;
@@ -41,9 +40,6 @@
 }
 
 .todo-item .check--active {
-    /* background: url("") no-repeat; */
-    background-size: 63%;
-    background-position: center center;
     width: 2.5em;
     height: 2.5em;
     border: none;
@@ -51,17 +47,10 @@
 }
   
 .todo-container-item .close {
-  /* background: url("") no-repeat; */
-      background-size: 90%;
-      background-position: center center;
       width: 1.2em;
       height: 1.2em;
       border: none;
       cursor: pointer;
 }
     
-.todo-item .close:hover {
-    /* background: url("/img/clase5.png") no-repeat; */
-      background-size: 90%;
-       background-position: center center;
-    }
+

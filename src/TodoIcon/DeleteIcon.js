@@ -1,6 +1,5 @@
 import React from 'react'
-// import {Delete} from './delete.svg'
-import { TodoIcon  } from './TodoIcon';
+import { TodoIcon  } from './';
 
 function DeleteIcon({ onDelete  }) {
     return (

@@ -4,11 +4,11 @@ function TodoCounter({completed, total}) {
   return (
     <div className='counter'>
       <h1 className='title'>
-        Has completado
+        Has completado&nbsp;
         <span className='prop'>{completed}</span>
-        de
+        &nbsp;de&nbsp;
         <span className='prop'>{total}</span>
-        TODO's
+        &nbsp;TODO's
       </h1>
     </div>
   )
