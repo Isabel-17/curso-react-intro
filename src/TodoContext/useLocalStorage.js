@@ -26,8 +26,8 @@ function useLocalStorage(itemName, initialValue) {
         setLoading(false);
         setError(true)
       } 
-    }, 5000)
-  },[]);
+    }, 2000)
+  },[itemName, initialValue]); 
 
     const saveItem = (newItem) => {
       localStorage.setItem(itemName, JSON.stringify(newItem))
@@ -45,3 +45,14 @@ function useLocalStorage(itemName, initialValue) {
 
 
 export  { useLocalStorage }
+
+// const defaultTodos= [
+//   {text: 'Lavar loza', completed: false},
+//   {text: 'Barrer', completed: false},
+//   {text: 'Hacer almuerzo', completed: false},
+//   {text: 'Sacar a Lupe 3 veces', completed: false},
+//   {text: 'Sacar a Lupe 2 veces mas', completed: false},
+//   {text: 'Cortar cebolla', completed: false},
+
+// ];
+// localStorage.setItem('TODOS_V1', JSON.stringify(defaultTodos))

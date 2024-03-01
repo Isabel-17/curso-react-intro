@@ -2,18 +2,18 @@
     display: flex;
     position: relative;
     left: 36%;
-    bottom: 8rem;
+    bottom: 12rem;
     width: 400px;
     height: 42px;
     border-radius: 5px;
     border: none;
     text-align: center;
     font-size: 1.5rem;
-    background-color: aliceblue;
+    background-color: #EEF5FF;
     box-shadow:rgb(138, 127, 127) 5px 5px 40px;
-    
-}
-.search:focus {
-    outline-color: rgba(167, 77, 4, 0.637);
 }
 
+.search::placeholder {
+    color: rgb(104, 107, 107);
+}
+ 
