@@ -1,6 +1,6 @@
 import './CreateTodoButton.css'
 
-function CreaterTodoButton({ setOpenModal }) {
+function CreateTodoButton({ setOpenModal }) {
     return (
         <div>
             <button className='CreaterTodoButton'
@@ -14,4 +14,4 @@ function CreaterTodoButton({ setOpenModal }) {
     )
   }
   
-  export { CreaterTodoButton }
+  export { CreateTodoButton }

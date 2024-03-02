@@ -52,6 +52,7 @@ function TodoProvider ({children}) {
     newTodos.splice(todoIndex, 1)
     saveTodos(newTodos);
   };
+  
   return (
     <TodoContext.Provider value={{
       loading,
