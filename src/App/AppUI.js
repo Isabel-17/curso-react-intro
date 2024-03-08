@@ -5,8 +5,8 @@ import { TodoList } from '../TodoList';
 import { TodoItem } from '../TodoItem';
 import { TodosLoading } from '../TodosLoading';
 import { TodosError } from '../TodosError';
-import { EmptyTodos } from '../EmptyTodos'; // Corregido aquí
-import { CreateTodoButton } from '../CreateTodoButton'; // Suponiendo que es 'CreateTodoButton', no 'CreaterTodoButton'
+import { EmptyTodos } from '../EmptyTodos'; 
+import { CreateTodoButton } from '../CreateTodoButton'; 
 import { Modal } from '../Modal';
 import { TodoForm } from '../TodoForm';
 import { TodoContext } from '../TodoContext';
@@ -30,9 +30,8 @@ function AppUI () {
         <TodoList>
           {loading && <TodosLoading/>}
           {error && <TodosError/>}
-          {(!loading && searchedTodos.length === 0) && <EmptyTodos/>} {/* Corregido aquí */}
-          
-          {searchedTodos.map(todo => (
+          {(!loading && (searchedTodos && searchedTodos.length === 0)) && <EmptyTodos/>} 
+          {searchedTodos && searchedTodos.map(todo => (
             <TodoItem 
               key={todo.text} 
               text={todo.text}
@@ -43,7 +42,7 @@ function AppUI () {
           ))}
         </TodoList> 
       
-        <CreateTodoButton // Corregido aquí
+        <CreateTodoButton 
           setOpenModal={setOpenModal}
         />
         
