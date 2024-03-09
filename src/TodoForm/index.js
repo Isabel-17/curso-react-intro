@@ -1,6 +1,8 @@
 import React from "react";
 import { TodoContext } from '../TodoContext'
+import { create } from "../Api";
 import './TodoForm.css'
+
 
 function TodoForm ( ) { 
     const {
@@ -9,9 +11,17 @@ function TodoForm ( ) {
     } = React.useContext(TodoContext)
     const [newTodoValue, setNewTodoValue] = React.useState('');
 
-    const onSubmit = (event) => {
+    const onSubmit = async (event) => {
         event.preventDefault();
-        addTodo(newTodoValue);
+        if(!newTodoValue.trim()) return
+
+        let body = {
+            title: newTodoValue,
+            status: "Pending",
+            priority: "High",
+            type: "Development"
+        }
+        let result = await create(body)
         setOpenModal(false);
     };
 
